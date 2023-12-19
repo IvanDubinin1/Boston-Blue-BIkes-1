@@ -84,7 +84,7 @@ st.pyplot()
 
 st.divider()
 st.write('<span style="font-size:30px; color:#A0C8E0;">Below is the following chart plotting all of the longitudes and latitudes of each blue bike station. This provides a general desciption of where the blue bikes are located.</span>', unsafe_allow_html=True)
-df_bikes1 = pd.read_csv(path + "current_bluebikes_stations.csv", usecols=[1, 2, 3, 4], skiprows=1)
+df_bikes1 = pd.read_csv("Final/current_bluebikes_stations.csv", usecols=[1, 2, 3, 4], skiprows=1)
 df_bikes1['District'].fillna('Unknown', inplace=True)
 
 
