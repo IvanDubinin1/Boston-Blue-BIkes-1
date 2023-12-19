@@ -7,7 +7,7 @@ path = "/Users/ivandubinin/Library/CloudStorage/OneDrive-BentleyUniversity/CS230
 
 st.title("Adjustable Map of Blue Bikes")
 
-df_bikes = pd.read_csv(path + "current_bluebikes_stations.csv", skiprows=1)
+df_bikes = pd.read_csv("Final/current_bluebikes_stations.csv", skiprows=1)
 df_bikes['District'].fillna('Unknown', inplace=True)
 df_bikes1 = df_bikes[['Number', 'Name', 'Latitude', 'Longitude', 'District', 'Public', 'Total docks', 'Deployment Year']]
 
