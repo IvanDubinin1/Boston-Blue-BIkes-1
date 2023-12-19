@@ -18,7 +18,7 @@ st.divider()
 st.write('<span style="font-size:30px; color:#A0C8E0;">Below is the following total dataframe provided for Boston Blue bikes. It has all of the data used to create the maps and charts for the webpage.</span>', unsafe_allow_html=True)
 path = "/Users/ivandubinin/Library/CloudStorage/OneDrive-BentleyUniversity/CS230/Final312/Final/"
 
-df_bikes = pd.read_csv(path + "current_bluebikes_stations.csv", skiprows=1)
+df_bikes = pd.read_csv("Final/current_bluebikes_stations.csv, skiprows=1)
 
 
 st.dataframe(df_bikes[['Number', 'Name', 'Latitude', 'Longitude', 'District', 'Public', 'Total docks', 'Deployment Year']],
@@ -56,7 +56,7 @@ ax.axis('equal')
 st.write("Pie Chart of Bike Count per District")
 st.pyplot(fig)
 
-df_bikes_trip_data = pd.read_csv(path + "hubway-tripdata2.csv")
+df_bikes_trip_data = pd.read_csv("Final/hubway-tripdata2.csv")
 
 st.divider()
 st.write('<span style="font-size:30px; color:#A0C8E0;">The below bar chart shows the 5 most popular stations to start from, plotted against the trip duration</span>', unsafe_allow_html=True)
