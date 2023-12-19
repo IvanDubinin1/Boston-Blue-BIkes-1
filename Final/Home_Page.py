@@ -18,7 +18,7 @@ st.divider()
 st.write('<span style="font-size:30px; color:#A0C8E0;">Below is the following total dataframe provided for Boston Blue bikes. It has all of the data used to create the maps and charts for the webpage.</span>', unsafe_allow_html=True)
 path = "/Users/ivandubinin/Library/CloudStorage/OneDrive-BentleyUniversity/CS230/Final312/Final/"
 
-df_bikes = pd.read_csv("Final/current_bluebikes_stations.csv, skiprows=1)
+df_bikes = pd.read_csv("Final/current_bluebikes_stations.csv", skiprows=1)
 
 
 st.dataframe(df_bikes[['Number', 'Name', 'Latitude', 'Longitude', 'District', 'Public', 'Total docks', 'Deployment Year']],
