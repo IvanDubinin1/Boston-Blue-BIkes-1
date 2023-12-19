@@ -13,7 +13,7 @@ st.sidebar.success("Data Customization Bellow.")
 
 
 st.title("Blue Bike Data")
-st.write('<span style="font-size:30px; color:white;">Bluebikes is public transportation by bike! With more than 4,000 bikes and 400 stations, its a fast, fun, and affordable way to get around Metro Boston. Bluebikes is municipally owned and jointly managed by Boston, Brookline, Cambridge, Everett, and Somerville.</span>', unsafe_allow_html=True)
+st.write('<span style="font-size:30px; color:black;">Bluebikes is public transportation by bike! With more than 4,000 bikes and 400 stations, its a fast, fun, and affordable way to get around Metro Boston. Bluebikes is municipally owned and jointly managed by Boston, Brookline, Cambridge, Everett, and Somerville.</span>', unsafe_allow_html=True)
 st.divider()
 st.write('<span style="font-size:30px; color:#A0C8E0;">Below is the following total dataframe provided for Boston Blue bikes. It has all of the data used to create the maps and charts for the webpage.</span>', unsafe_allow_html=True)
 path = "/Users/ivandubinin/Library/CloudStorage/OneDrive-BentleyUniversity/CS230/Final312/Final/"
