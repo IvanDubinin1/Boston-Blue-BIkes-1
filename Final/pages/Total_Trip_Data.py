@@ -14,7 +14,7 @@ st.divider()
 
 st.write('<span style="font-size:30px; color:#A0C8E0;">Usually Blue Bikes are not used as often in certain spots due to street dificulty, or location. The following graph will plot all of the starting station against the total number of trips started from that station. </span>', unsafe_allow_html=True)
 st.set_option('deprecation.showPyplotGlobalUse', False)
-df_bikes_trip_data = pd.read_csv(path + "hubway-tripdata2.csv")
+df_bikes_trip_data = pd.read_csv("Final/hubway-tripdata2.csv")
 station_counts = df_bikes_trip_data['start station name'].value_counts()
 
 # Create a horizontal bar chart
